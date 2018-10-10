@@ -1,0 +1,123 @@
+Last login: Wed Oct 10 12:17:39 on console
+SE14L0120-23:~ a01055581$ cd ~/Desktop
+SE14L0120-23:Desktop a01055581$ mkdir Test2
+SE14L0120-23:Desktop a01055581$ cd Test2
+SE14L0120-23:Test2 a01055581$ touch commands.txt
+SE14L0120-23:Test2 a01055581$ git clone https://github.com/AnnaDorogaya/gitTest2526.git
+Cloning into 'gitTest2526'...
+warning: You appear to have cloned an empty repository.
+SE14L0120-23:Test2 a01055581$ cd ~/Desktop
+SE14L0120-23:Desktop a01055581$ git clone https://github.com/AnnaDorogaya/gitTest2526.git
+Cloning into 'gitTest2526'...
+warning: You appear to have cloned an empty repository.
+SE14L0120-23:Desktop a01055581$ cd gitTest2526
+SE14L0120-23:gitTest2526 a01055581$ cd Desktop
+-bash: cd: Desktop: No such file or directory
+SE14L0120-23:gitTest2526 a01055581$ cd ~/Desktop
+SE14L0120-23:Desktop a01055581$ mv -r ~/Desktop/Test2 ~/Desktop/gitTest2526
+mv: illegal option -- r
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+SE14L0120-23:Desktop a01055581$ cd gitTest2526
+SE14L0120-23:gitTest2526 a01055581$ mv -r ~/Desktop/Test2 ~/Desktop/gitTest2526
+mv: illegal option -- r
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+SE14L0120-23:gitTest2526 a01055581$ cd ~/Desktop
+SE14L0120-23:Desktop a01055581$ mv Test2 gitTest2526
+SE14L0120-23:Desktop a01055581$ git commit -m "first changes"
+fatal: Not a git repository (or any of the parent directories): .git
+SE14L0120-23:Desktop a01055581$ git add Test2
+fatal: Not a git repository (or any of the parent directories): .git
+SE14L0120-23:Desktop a01055581$ cd gitTest2526
+SE14L0120-23:gitTest2526 a01055581$ git add Test2
+SE14L0120-23:gitTest2526 a01055581$ git commit -m "first changes"
+[master (root-commit) 98dd455] first changes
+ Committer: Anna Dorogaya <a01055581@se14l0120-23.ad.bcit.ca>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Test2/commands.txt
+SE14L0120-23:gitTest2526 a01055581$ push origin master
+-bash: push: command not found
+SE14L0120-23:gitTest2526 a01055581$ git push origin master
+Username for 'https://github.com': AnnaDorogaya
+Password for 'https://AnnaDorogaya@github.com': 
+Counting objects: 4, done.
+Writing objects: 100% (4/4), 268 bytes | 268.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/AnnaDorogaya/gitTest2526/pull/new/master
+remote: 
+To https://github.com/AnnaDorogaya/gitTest2526.git
+ * [new branch]      master -> master
+SE14L0120-23:gitTest2526 a01055581$ touch repo.txt
+SE14L0120-23:gitTest2526 a01055581$ nano repo.txt
+SE14L0120-23:gitTest2526 a01055581$ add nano.txt
+-bash: add: command not found
+SE14L0120-23:gitTest2526 a01055581$ git add repo.txt
+SE14L0120-23:gitTest2526 a01055581$ git commit -m "repo"
+[master ff6510d] repo
+ Committer: Anna Dorogaya <a01055581@se14l0120-23.ad.bcit.ca>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 repo.txt
+SE14L0120-23:gitTest2526 a01055581$ git push origin master
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 323 bytes | 323.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/AnnaDorogaya/gitTest2526.git
+   98dd455..ff6510d  master -> master
+SE14L0120-23:gitTest2526 a01055581$ touch index.html
+SE14L0120-23:gitTest2526 a01055581$ nano index.html
+SE14L0120-23:gitTest2526 a01055581$ git add index.html
+SE14L0120-23:gitTest2526 a01055581$ git commit -m "html"
+[master c7252b5] html
+ Committer: Anna Dorogaya <a01055581@se14l0120-23.ad.bcit.ca>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 3 insertions(+)
+ create mode 100644 index.html
+SE14L0120-23:gitTest2526 a01055581$ git push origin master
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 340 bytes | 340.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/AnnaDorogaya/gitTest2526.git
+   ff6510d..c7252b5  master -> master
+SE14L0120-23:gitTest2526 a01055581$ 
